@@ -161,3 +161,24 @@ const inventory = [
     sold: 8,
   },
 ];
+
+// Opdracht 1
+// const stockLeft aanmaken
+// van elk object doe originalstock - sold.
+// uitkomst optellen bij  stockLeft  voor nieuwe stock left
+// stockleft printen op pagina
+
+function toBeSold() {
+// nieuwe array met aantallen per tv om nog te verkopen
+  const stockLeft = inventory.map((inventory) => {
+    return inventory.originalStock - inventory.sold;
+  });
+// array doorlopen en bij elkaar optellen.
+  let toBeSold = 0;
+  for (let i = 0; i < stockLeft.length; i++) {
+    toBeSold += stockLeft[i];
+  }
+  return toBeSold;
+}
+
+document.getElementById('toBeSold').innerHTML = toBeSold().toString();
