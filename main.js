@@ -274,8 +274,23 @@ function showTvScreenSize(index) {
     return inventory.availableSizes;
   });
   if (tvScreenSize[index].length === 1){
-    return tvScreenSize[index] + " (" + tvScreenSize[index]*2.54 + " cm)";
-  } else return 1;
+    return tvScreenSize[index] +
+        " inch (" +
+        Math.floor(tvScreenSize[index]*2.54) +
+        " cm)";
+  } else {
+    let tvScreenSizeReturnValue = tvScreenSize[0] +
+        " inch  (" +
+        tvScreenSize[0]*2.54 +
+        " cm)";
+    // for (let i = 0; i < tvScreenSize[index].length; i++) {
+    //   tvScreenSizeReturnValue =+ " | " +
+    //       " (" +
+    //       Math.floor(tvScreenSize[index]*2.54) +
+    //       " cm)";
+    // }
+    return tvScreenSizeReturnValue;
+  }
 }
 // naar HTML pagina plaatsen.
 const tvOneScreenSize = document.getElementById('tvOneScreenSize');
