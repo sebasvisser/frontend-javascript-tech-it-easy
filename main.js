@@ -197,7 +197,11 @@ console.log({inventoryToBeSold});
 
 // ========== Einde Opdracht 2b ==========
 // ========== Opdracht 2c ==========
-
+// Nieuwe array via Filter op basis van inventory.options. ambi = true
+const ambiTv = inventory.filter((inventory) => {
+  return inventory.options.ambiLight === true;
+});
+console.log({ambiTv});
 
 // ========== Einde Opdracht 2c ==========
 // ========== Opdracht 2d ==========
