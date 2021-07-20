@@ -202,11 +202,10 @@ const ambiTv = inventory.filter((inventory) => {
 // ========== Einde Opdracht 2c ==========
 // ========== Opdracht 2d ==========
   function lowToHigh() {
-    const lowPriceHighPrice = inventory.sort((a, b) => {
+    return inventory.sort((a, b) => {
       return a.price - b.price;
     });
-    return lowPriceHighPrice;
-  };
+  }
 
 // ========== Einde Opdracht 2d ==========
 
