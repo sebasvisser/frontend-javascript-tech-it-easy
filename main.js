@@ -253,10 +253,17 @@ function showTvName(index) {
 // naar HTML pagina plaatsen.
 const tvOneName = document.getElementById('tvOneName');
 tvOneName.textContent = showTvName(1).toString();
-
 // ========== Einde Opdracht 5a ==========
 // ========== Opdracht 5b ==========
-
+function showTvPrice(index) {
+  const tvPrice = inventory.map((inventory) => {
+    return "€" + inventory.price + ",-";
+  });
+  return tvPrice[index];
+}
+// naar HTML pagina plaatsen.
+const tvOnePrice = document.getElementById('tvOnePrice');
+tvOnePrice.textContent = showTvPrice(1).toString();
 // ========== Einde Opdracht 5b ==========
 // ========== Opdracht 5c ==========
 
