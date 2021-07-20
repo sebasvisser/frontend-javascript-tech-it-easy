@@ -186,66 +186,67 @@ function toBeSold() {
 const tweeA = inventory.map((inventory) => {
   return inventory.type;
 });
-console.log({tweeA});
 
 // ========== Einde Opdracht 2a ==========
 // ========== Opdracht 2b ==========
 const inventoryToBeSold = inventory.filter((inventory) => {
   return inventory.originalStock - inventory.sold === 0;
 });
-console.log({inventoryToBeSold});
 
 // ========== Einde Opdracht 2b ==========
 // ========== Opdracht 2c ==========
-// Nieuwe array via Filter op basis van inventory.options. ambi = true
 const ambiTv = inventory.filter((inventory) => {
   return inventory.options.ambiLight === true;
 });
-console.log({ambiTv});
 
 // ========== Einde Opdracht 2c ==========
 // ========== Opdracht 2d ==========
-
+  function lowToHigh() {
+    const lowPriceHighPrice = inventory.sort((a, b) => {
+      return a.price - b.price;
+    });
+    return lowPriceHighPrice;
+  };
 
 // ========== Einde Opdracht 2d ==========
 
 
-// ========== Opdracht 2d ==========
+// ========== Opdracht 3a ==========
 
-// ========== Einde Opdracht 2d ==========
-
-
-// ========== Opdracht  ==========
-
-// ========== Einde Opdracht  ==========
+// ========== Einde Opdracht 3b ==========
 
 
-// ========== Opdracht  ==========
+// ========== Opdracht 4 ==========
 
-// ========== Einde Opdracht  ==========
-
-
-// ========== Opdracht  ==========
-
-// ========== Einde Opdracht  ==========
+// ========== Einde Opdracht 4  ==========
 
 
-// ========== Opdracht  ==========
+// ========== Opdracht 5a ==========
 
-// ========== Einde Opdracht  ==========
-
-
-// ========== Opdracht  ==========
-
-// ========== Einde Opdracht  ==========
+// ========== Einde Opdracht 5a ==========
 
 
-// ========== Opdracht  ==========
+// ========== Opdracht 5b ==========
 
-// ========== Einde Opdracht  ==========
+// ========== Einde Opdracht 5b ==========
 
 
-// ========== Opdracht  ==========
+// ========== Opdracht 5c ==========
 
-// ========== Einde Opdracht  ==========
+// ========== Einde Opdracht 5c ==========
+
+
+// ========== Opdracht 5d ==========
+
+// ========== Einde Opdracht 5d ==========
+
+
+// ========== Opdracht 5e ==========
+
+// ========== Einde Opdracht 5e ==========
+
+
+// ========== Opdracht Bonus ==========
+
+// ========== Einde Opdracht Bonus ==========
 
