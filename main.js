@@ -244,6 +244,7 @@ const tvTwee = document.getElementById('tvTwee');
 tvTwee.textContent = inventory[2].type;
 // ========== Einde Opdracht 4  ==========
 // ========== Opdracht 5a ==========
+// index komt overeen met index nummer in de inventory array.
 function showTvName(index) {
   const tvName = inventory.map((inventory) => {
     return inventory.brand + " " +  inventory.type + " - " + inventory.name;
@@ -255,6 +256,7 @@ const tvOneName = document.getElementById('tvOneName');
 tvOneName.textContent = showTvName(1).toString();
 // ========== Einde Opdracht 5a ==========
 // ========== Opdracht 5b ==========
+// index komt overeen met index nummer in de inventory array.
 function showTvPrice(index) {
   const tvPrice = inventory.map((inventory) => {
     return "€" + inventory.price + ",-";
@@ -266,6 +268,18 @@ const tvOnePrice = document.getElementById('tvOnePrice');
 tvOnePrice.textContent = showTvPrice(1).toString();
 // ========== Einde Opdracht 5b ==========
 // ========== Opdracht 5c ==========
+// index komt overeen met index nummer in de inventory array.
+function showTvScreenSize(index) {
+  const tvScreenSize = inventory.map((inventory) => {
+    return inventory.availableSizes;
+  });
+  if (tvScreenSize[index].length === 1){
+    return tvScreenSize[index] + " (" + tvScreenSize[index]*2.54 + " cm)";
+  } else return 1;
+}
+// naar HTML pagina plaatsen.
+const tvOneScreenSize = document.getElementById('tvOneScreenSize');
+tvOneScreenSize.textContent = showTvScreenSize(3).toString();
 
 // ========== Einde Opdracht 5c ==========
 // ========== Opdracht 5d ==========
