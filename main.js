@@ -162,12 +162,8 @@ const inventory = [
   },
 ];
 
-// Opdracht 1
-// const stockLeft aanmaken
-// van elk object doe originalstock - sold.
-// uitkomst optellen bij  stockLeft  voor nieuwe stock left
-// stockleft printen op pagina
 
+// ========== Opdracht 1 ==========
 function toBeSold() {
 // nieuwe array met aantallen per tv om nog te verkopen
   const stockLeft = inventory.map((inventory) => {
@@ -180,5 +176,72 @@ function toBeSold() {
   }
   return toBeSold;
 }
+// naar HTML pagina plaatsen.
+// Onderstaande 2 regels als comment ivm consoleLog in IDE
+// const soldHTML = document.getElementById('toBeSold');
+// soldHTML.textContent = toBeSold().toString();
 
-document.getElementById('toBeSold').innerHTML = toBeSold().toString();
+// ========== Einde Opdracht 1 ==========
+// ========== Opdracht 2a ==========
+const tweeA = inventory.map((inventory) => {
+  return inventory.type;
+});
+console.log({tweeA});
+
+// ========== Einde Opdracht 2a ==========
+// ========== Opdracht 2b ==========
+const inventoryToBeSold = inventory.filter((inventory) => {
+  return inventory.originalStock - inventory.sold === 0;
+});
+console.log({inventoryToBeSold});
+
+// ========== Einde Opdracht 2b ==========
+// ========== Opdracht 2c ==========
+
+
+// ========== Einde Opdracht 2c ==========
+// ========== Opdracht 2d ==========
+
+
+// ========== Einde Opdracht 2d ==========
+
+
+// ========== Opdracht 2d ==========
+
+// ========== Einde Opdracht 2d ==========
+
+
+// ========== Opdracht  ==========
+
+// ========== Einde Opdracht  ==========
+
+
+// ========== Opdracht  ==========
+
+// ========== Einde Opdracht  ==========
+
+
+// ========== Opdracht  ==========
+
+// ========== Einde Opdracht  ==========
+
+
+// ========== Opdracht  ==========
+
+// ========== Einde Opdracht  ==========
+
+
+// ========== Opdracht  ==========
+
+// ========== Einde Opdracht  ==========
+
+
+// ========== Opdracht  ==========
+
+// ========== Einde Opdracht  ==========
+
+
+// ========== Opdracht  ==========
+
+// ========== Einde Opdracht  ==========
+
