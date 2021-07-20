@@ -208,44 +208,27 @@ const ambiTv = inventory.filter((inventory) => {
   }
 
 // ========== Einde Opdracht 2d ==========
-
-
 // ========== Opdracht 3a ==========
 
 // ========== Einde Opdracht 3b ==========
-
-
 // ========== Opdracht 4 ==========
 
 // ========== Einde Opdracht 4  ==========
-
-
 // ========== Opdracht 5a ==========
 
 // ========== Einde Opdracht 5a ==========
-
-
 // ========== Opdracht 5b ==========
 
 // ========== Einde Opdracht 5b ==========
-
-
 // ========== Opdracht 5c ==========
 
 // ========== Einde Opdracht 5c ==========
-
-
 // ========== Opdracht 5d ==========
 
 // ========== Einde Opdracht 5d ==========
-
-
 // ========== Opdracht 5e ==========
 
 // ========== Einde Opdracht 5e ==========
-
-
 // ========== Opdracht Bonus ==========
 
 // ========== Einde Opdracht Bonus ==========
-
