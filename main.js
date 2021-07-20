@@ -221,9 +221,27 @@ function totalPossibleRevenue() {
 // naar HTML pagina plaatsen.
 const possibleRevenue = document.getElementById('possibleRevenue');
 possibleRevenue.textContent = totalPossibleRevenue().toString();
-// ========== Einde Opdracht 3b ==========
+// ========== Einde Opdracht 3a ==========
+// ========== Opdracht 3b ==========
+function ExactSoldRevenue() {
+  const soldRevenue = inventory.map(( inventory) => {
+    return inventory.price * inventory.sold;
+  });
+  let ExactSoldRevenue = 0;
+  for (let i = 0; i < soldRevenue.length; i++) {
+    ExactSoldRevenue += soldRevenue[i];
+  }
+  return ExactSoldRevenue;
+}
+// naar HTML pagina plaatsen.
+const actualRevenue = document.getElementById('actualRevenue');
+actualRevenue.textContent = ExactSoldRevenue().toString();
+// ========== Einde Opdracht 3b  ==========
 // ========== Opdracht 4 ==========
-
+const tvEen = document.getElementById('tvEen');
+tvEen.textContent = inventory[1].type;
+const tvTwee = document.getElementById('tvTwee');
+tvTwee.textContent = inventory[2].type;
 // ========== Einde Opdracht 4  ==========
 // ========== Opdracht 5a ==========
 
