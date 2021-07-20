@@ -177,9 +177,8 @@ function toBeSold() {
   return toBeSold;
 }
 // naar HTML pagina plaatsen.
-// Onderstaande 2 regels als comment ivm consoleLog in IDE
-// const soldHTML = document.getElementById('toBeSold');
-// soldHTML.textContent = toBeSold().toString();
+const soldHTML = document.getElementById('toBeSold');
+soldHTML.textContent = toBeSold().toString();
 
 // ========== Einde Opdracht 1 ==========
 // ========== Opdracht 2a ==========
@@ -209,7 +208,19 @@ const ambiTv = inventory.filter((inventory) => {
 
 // ========== Einde Opdracht 2d ==========
 // ========== Opdracht 3a ==========
-
+function totalPossibleRevenue() {
+    const allSoldRevenue = inventory.map(( inventory) => {
+      return inventory.price * inventory.originalStock;
+    });
+    let totalRevenuePossible = 0;
+  for (let i = 0; i < allSoldRevenue.length; i++) {
+    totalRevenuePossible += allSoldRevenue[i];
+  }
+  return totalRevenuePossible;
+}
+// naar HTML pagina plaatsen.
+const possibleRevenue = document.getElementById('possibleRevenue');
+possibleRevenue.textContent = totalPossibleRevenue().toString();
 // ========== Einde Opdracht 3b ==========
 // ========== Opdracht 4 ==========
 
