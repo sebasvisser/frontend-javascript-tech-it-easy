@@ -244,6 +244,15 @@ const tvTwee = document.getElementById('tvTwee');
 tvTwee.textContent = inventory[2].type;
 // ========== Einde Opdracht 4  ==========
 // ========== Opdracht 5a ==========
+function showTvName(index) {
+  const tvName = inventory.map((inventory) => {
+    return inventory.brand + " " +  inventory.type + " - " + inventory.name;
+  });
+  return tvName[index];
+}
+// naar HTML pagina plaatsen.
+const tvOneName = document.getElementById('tvOneName');
+tvOneName.textContent = showTvName(1).toString();
 
 // ========== Einde Opdracht 5a ==========
 // ========== Opdracht 5b ==========
