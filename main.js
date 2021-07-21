@@ -279,17 +279,17 @@ function showTvScreenSize(index) {
         Math.floor(tvScreenSize[index]*2.54) +
         " cm)";
   } else {
-    let tvScreenSizeReturnValue = tvScreenSize[0] +
-        " inch  (" +
-        tvScreenSize[0]*2.54 +
-        " cm)";
+    // let tvScreenSizeReturnValue ;
+    // for (let i = 0; i < ; i++) {
+    //
+    // }
     // for (let i = 0; i < tvScreenSize[index].length; i++) {
     //   tvScreenSizeReturnValue =+ " | " +
     //       " (" +
     //       Math.floor(tvScreenSize[index]*2.54) +
     //       " cm)";
     // }
-    return tvScreenSizeReturnValue;
+    return tvScreenSizeReturnValue.length;
   }
 }
 // naar HTML pagina plaatsen.
